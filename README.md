@@ -10,10 +10,10 @@ Remove items from the inventory<br>
 Prerequisites
 A web browser
 
-Built With
-HTML
-CSS
-JavaScript
+Built With<br>
+HTML<br>
+CSS<br>
+JavaScript<br>
 
 
 
