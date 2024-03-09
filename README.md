@@ -17,8 +17,8 @@ JavaScript<br>
 
 
 
-License
+License<br>
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments
+Acknowledgments<br>
 This project was inspired by various sources, including tutorials and books.
