@@ -1,0 +1,181 @@
+/* Set background color to light grey with transition */
+body {
+  font-family: serif, sans-serif; /* Fallback for unsupported fonts */
+  margin: 0;
+  padding: 0;
+  background: beige;
+  transition: background-color 0.5s ease;
+}
+
+nav {
+  border: 2px solid black;
+  font-size: 1rem; /* Use rem for better responsiveness */
+ 
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+.navbar-brand {
+  margin-top: 15px;
+  font-size: 2rem; /* Use rem for better responsiveness */
+  text-align: center;
+  color:black;
+  line-height: 1.5; /* Improve spacing visually */
+  transition: color 0.3s ease; /* Existing transition for color change */
+  pointer-events: none;
+}
+aside {
+  width: 200px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  float: left;
+}
+body.aside-visible {
+  margin-left: 200px; /* Adjust the margin when aside is visible */
+}
+
+#toggle-btn {
+  font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+aside.hidden {
+  width: 0;
+  overflow: hidden;
+}
+
+.navigation{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.na{
+  color: white;
+
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none; /* Remove default underline */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  transition: color 0.3s ease; /* Existing transition for color change */
+  
+}
+.nav-link:hover {
+  color: white;
+}
+
+
+h2 {
+  
+  padding: 1rem; /* Add padding for better readability */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Make heading cover full width */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.form-label {
+  margin-right: 1rem; /* Use rem for better responsiveness */
+  transition: color 0.3s ease; /* Optional transition for text color change */
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; /* Make heading cover full width */
+}
+
+h4 {
+  background: linear-gradient(177.9deg, #fff2fe 5.3%, #fff2fe 5.3%, #bc84ad 94.7%);
+  padding: 1rem; /* Add padding for better readability */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Make heading cover full width */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+/* Adjust button and heading positions (adjust values as needed) */
+.button { /* Assuming a button class exists */
+  position: relative;
+  top: 10px; /* Move button down slightly */
+  left: 20px; /* Move button to the right */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition for button effects */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Add some padding */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Slightly shrink button on click */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+/* Animation effects on button click (choose one or combine) */
+.button:active {
+  /* Option 1: Pulse effect */
+  animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Make home button white */
+.nav-link.active {
+  color: white !important;
+}
+
+/* Styling for the container */
+.container {
+  background-color: rgba(128, 128, 128, 0.3); /* Translucent grey background */
+  padding: 20px; /* Add padding for spacing */
+  margin-top: 20px; /* Add margin to separate from other elements */
+}
+
+/* Add clearfix class to clear float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Align the button to the right */
+.float-end {
+  float: right;
+}
+.nav-link.active {
+  color: black !important;
+  background-color:grey;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
