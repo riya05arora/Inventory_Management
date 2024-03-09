@@ -1,13 +1,11 @@
 # Inventory_Management
 This is a simple Inventory Management System created using HTML, CSS, and JavaScript. It is currently a frontend-only application.
 
-Features
-View the list of inventory items
-Add new items to the inventory
-Edit existing items in the inventory
-Remove items from the inventory
-Getting Started
-To get a local copy up and running, follow these simple steps:
+Features<br>
+View the list of inventory items<br>
+Add new items to the inventory<br>
+Edit existing items in the inventory<br>
+Remove items from the inventory<br>
 
 Prerequisites
 A web browser
